@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1080 height=1706 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/CargoTetris.loader.js";
+      var loaderUrl = buildUrl + "/CargoTetrisTest.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/CargoTetris.data",
-        frameworkUrl: buildUrl + "/CargoTetris.framework.js",
-        codeUrl: buildUrl + "/CargoTetris.wasm",
+        dataUrl: buildUrl + "/CargoTetrisTest.data",
+        frameworkUrl: buildUrl + "/CargoTetrisTest.framework.js",
+        codeUrl: buildUrl + "/CargoTetrisTest.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "CargoTetris",
@@ -99,7 +99,7 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
         canvas.style.width = "1080px";
-        canvas.style.height = "1920px";
+        canvas.style.height = "1706px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
